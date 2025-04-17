@@ -1,0 +1,475 @@
+[
+    {
+        "type": "case",
+        "declensions": [
+            {
+                "case": "nominative",
+                "description": "subject",
+                "suffixes": [
+                    {
+                        "word": "at",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "atìs",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "et",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ets",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "ot",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ots",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "accusative",
+                "description": "direct object",
+                "suffixes": [
+                    {
+                        "word": "àr",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "àrs",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "er",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "erìs",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "oŕ",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "oŕìs",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "dative",
+                "description": "indirect object",
+                "suffixes": [
+                    {
+                        "word": "ah",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ahes",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "eh",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ehìs",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "oh",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ohìs",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "vocative",
+                "description": "addressed noun",
+                "suffixes": [
+                    {
+                        "word": "jal",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "jalìs",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "jel",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "jelìs",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "jol",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "jolìs",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "comitative",
+                "description": "accompaniment",
+                "suffixes": [
+                    {
+                        "word": "auf",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "aufìs",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "ef",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "efìs",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "of",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ofìs",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "instrumental",
+                "description": "instrument",
+                "suffixes": [
+                    {
+                        "word": "auď",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "auďs",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "eď",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "eďs",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "oď",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "oďs",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "sociative",
+                "description": "doing with",
+                "suffixes": [
+                    {
+                        "word": "aiś",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "aiśìs",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "eiś",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "eiśìs",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "oś",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ośìs",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "locative",
+                "description": "motion towards / close by",
+                "suffixes": [
+                    {
+                        "word": "lak",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "laks",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "lek",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "leks",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "ok",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "oks",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "ablative",
+                "description": "motion away / far away",
+                "suffixes": [
+                    {
+                        "word": "vam",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "vamìs",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "vem",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "vemìs",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "vom",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "vomìs",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "inessive",
+                "description": "inside",
+                "suffixes": [
+                    {
+                        "word": "nà",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "nas",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "nì",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "nes",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "no",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "nos",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "addessive",
+                "description": "by / right outside",
+                "suffixes": [
+                    {
+                        "word": "auz",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "auzes",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "ez",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ezes",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "oz",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ozes",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "genitive",
+                "description": "possessed",
+                "suffixes": [
+                    {
+                        "word": "ìn",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ìns",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "ìn",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ìns",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "ìn",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "ìns",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            },
+            {
+                "case": "ergative",
+                "description": "agent",
+                "suffixes": [
+                    {
+                        "word": "gen",
+                        "gender": "feminine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "gens",
+                        "gender": "feminine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "gen",
+                        "gender": "masculine",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "gens",
+                        "gender": "masculine",
+                        "plurality": "plural"
+                    },
+                    {
+                        "word": "gen",
+                        "gender": "neuter",
+                        "plurality": "singular"
+                    },
+                    {
+                        "word": "gens",
+                        "gender": "neuter",
+                        "plurality": "plural"
+                    }
+                ]
+            }
+        ]
+    }
+]

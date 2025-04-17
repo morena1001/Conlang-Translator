@@ -1,0 +1,206 @@
+[
+    {
+        "letter": "p",
+        "type": "consonant"
+    },
+    {
+        "letter": "b",
+        "type": "consonant"
+    },
+    {
+        "letter": "m",
+        "type": "consonant"
+    },
+    {
+        "letter": "n",
+        "type": "consonant"
+    },
+    {
+        "letter": "f",
+        "type": "consonant"
+    },
+    {
+        "letter": "v",
+        "type": "consonant"
+    },
+    {
+        "letter": "ť",
+        "type": "consonant"
+    },
+    {
+        "letter": "ď",
+        "type": "consonant"
+    },
+    {
+        "letter": "ć",
+        "type": "consonant"
+    },
+    {
+        "letter": "ś",
+        "type": "consonant"
+    },
+    {
+        "letter": "t",
+        "type": "consonant"
+    },
+    {
+        "letter": "d",
+        "type": "consonant"
+    },
+    {
+        "letter": "s",
+        "type": "consonant"
+    },
+    {
+        "letter": "z",
+        "type": "consonant"
+    },
+    {
+        "letter": "l",
+        "type": "consonant"
+    },
+    {
+        "letter": "r",
+        "type": "consonant"
+    },
+    {
+        "letter": "k",
+        "type": "consonant"
+    },
+    {
+        "letter": "g",
+        "type": "consonant"
+    },
+    {
+        "letter": "j",
+        "type": "consonant"
+    },
+    {
+        "letter": "h",
+        "type": "consonant"
+    },
+    {
+        "letter": "ł",
+        "type": "consonant"
+    },
+    {
+        "letter": "ŕ",
+        "type": "consonant"
+    },
+    {
+        "letter": "i",
+        "type": "vowel"
+    },
+    {
+        "letter": "ì",
+        "type": "vowel"
+    },
+    {
+        "letter": "e",
+        "type": "vowel"
+    },
+    {
+        "letter": "a",
+        "type": "vowel"
+    },
+    {
+        "letter": "à",
+        "type": "vowel"
+    },
+    {
+        "letter": "u",
+        "type": "vowel"
+    },
+    {
+        "letter": "o",
+        "type": "vowel"
+    },
+    {
+        "letter": "í",
+        "type": "vowel"
+    },
+    {
+        "letter": "ȉ",
+        "type": "vowel"
+    },
+    {
+        "letter": "é",
+        "type": "vowel"
+    },
+    {
+        "letter": "á",
+        "type": "vowel"
+    },
+    {
+        "letter": "ȁ",
+        "type": "vowel"
+    },
+    {
+        "letter": "ú",
+        "type": "vowel"
+    },
+    {
+        "letter": "ó",
+        "type": "vowel"
+    },
+    {
+        "letter": "ia",
+        "type": "vowel"
+    },
+    {
+        "letter": "ei",
+        "type": "vowel"
+    },
+    {
+        "letter": "ai",
+        "type": "vowel"
+    },
+    {
+        "letter": "au",
+        "type": "vowel"
+    },
+    {
+        "letter": "ài",
+        "type": "vowel"
+    },
+    {
+        "letter": "àu",
+        "type": "vowel"
+    },
+    {
+        "letter": "ui",
+        "type": "vowel"
+    },
+    {
+        "letter": "uì",
+        "type": "vowel"
+    },
+    {
+        "letter": "ue",
+        "type": "vowel"
+    },
+    {
+        "letter": "ua",
+        "type": "vowel"
+    },
+    {
+        "letter": "uà",
+        "type": "vowel"
+    },
+    {
+        "letter": "uu",
+        "type": "vowel"
+    },
+    {
+        "letter": "uo",
+        "type": "vowel"
+    },
+    {
+        "letter": "oi",
+        "type": "vowel"
+    },
+    {
+        "letter": "ou",
+        "type": "vowel"
+    }
+]

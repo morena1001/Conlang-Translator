@@ -1,0 +1,1283 @@
+[
+    {
+        "type": "declensions",
+        "declensions": [
+            {
+                "key": "ag_adj",
+                "word": "bośt",
+                "name": "agent adjective"
+            },
+            {
+                "key": "pt_adj",
+                "word": "eif",
+                "name": "patient adjective"
+            },
+            {
+                "key": "ag_do",
+                "word": "ìr",
+                "name": "agent doer"
+            },
+            {
+                "key": "pt_do",
+                "word": "dìz",
+                "name": "patient doer"
+            },
+            {
+                "key": "act_res",
+                "word": "vid",
+                "name": "result of action"
+            },
+            {
+                "key": "ger",
+                "word": "",
+                "name": "gerund"
+            }
+        ]
+    },
+    {
+        "type": "auxiliary",
+        "declensions": [
+            {
+                "key": "absol",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "ibét",
+                        "name": "present absolute"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "aibàt",
+                        "name": "past absolute"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "edìr",
+                        "name": "future absolute"
+                    }
+                ],
+                "name": "absolute (must)"
+            },
+            {
+                "key": "force",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "laut",
+                        "name": "present forced"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "youn",
+                        "name": "past forced"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "hein",
+                        "name": "future forced"
+                    }
+                ],
+                "name": "forced (have to)"
+            },
+            {
+                "key": "wish",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "lok",
+                        "name": "present wish"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "lug",
+                        "name": "past wish"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "ueg",
+                        "name": "future wish"
+                    }
+                ],
+                "name": "wish"
+            },
+            {
+                "key": "want",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "nid",
+                        "name": "present want"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "sven",
+                        "name": "past want"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "mìnt",
+                        "name": "future want"
+                    }
+                ],
+                "name": "want"
+            },
+            {
+                "key": "hope",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "seim",
+                        "name": "present hope"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "śìn",
+                        "name": "past hope"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "zond",
+                        "name": "future hope"
+                    }
+                ],
+                "name": "hope"
+            },
+            {
+                "key": "need",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "gauť",
+                        "name": "present need"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "koď",
+                        "name": "past need"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "get",
+                        "name": "future need"
+                    }
+                ],
+                "name": "need"
+            },
+            {
+                "key": "perm",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "jir",
+                        "name": "present permission"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "hord",
+                        "name": "past permission"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "jìt",
+                        "name": "future permission"
+                    }
+                ],
+                "name": "permission"
+            },
+            {
+                "key": "ab",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "kat",
+                        "name": "present ability"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "gàm",
+                        "name": "past ability"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "kret",
+                        "name": "future ability"
+                    }
+                ],
+                "name": "ability"
+            }
+        ]
+    },
+    {
+        "type": "aspect",
+        "declensions": [
+            {
+                "key": "s",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "",
+                        "name": "simple present aspect"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "fold",
+                        "name": "simple past aspect"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "vìrt",
+                        "name": "simple future aspect"
+                    }
+                ],
+                "name": "simple"
+            },
+            {
+                "key": "pg",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "fełt",
+                        "name": "progressive present aspect"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "uìdìr",
+                        "name": "progressive past aspect"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "vìrt",
+                        "name": "progressive future aspect"
+                    }
+                ],
+                "name": "progressive"
+            },
+            {
+                "key": "pf",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "oudìr",
+                        "name": "perfect present aspect"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "lam",
+                        "name": "perfect past aspect"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "lìnìn",
+                        "name": "perfect future aspect"
+                    }
+                ],
+                "name": "perfect"
+            },
+            {
+                "key": "pp",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "leim",
+                        "name": "perfect progressive present aspect"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "bjon",
+                        "name": "perfect progressive past aspect"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "piìr",
+                        "name": "perfect progressive future aspect"
+                    }
+                ],
+                "name": "perfect progressive"
+            },
+            {
+                "key": "h",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "bjut",
+                        "name": "habitual present aspect"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "den",
+                        "name": "habitual past aspect"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "tàrm",
+                        "name": "habitual future aspect"
+                    }
+                ],
+                "name": "habitual"
+            },
+            {
+                "key": "ph",
+                "word": [
+                    {
+                        "key": "pr",
+                        "word": "tam",
+                        "name": "perfect habitual present aspect"
+                    },
+                    {
+                        "key": "pa",
+                        "word": "tet",
+                        "name": "perfect habitual past aspect"
+                    },
+                    {
+                        "key": "ft",
+                        "word": "deim",
+                        "name": "perfect habitual future aspect"
+                    }
+                ],
+                "name": "perfect habitual"
+            }
+        ]
+    },
+    {
+        "type": "conjugations",
+        "declensions": [
+            {
+                "key": "act",
+                "name": "active voice",
+                "word": [
+                    {
+                        "key": "ind",
+                        "name": "indicative mood",
+                        "word": [
+                            {
+                                "key": "1",
+                                "name": "1st person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "i",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "is",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "ít",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "íts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ik",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "iks",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "2",
+                                "name": "2nd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "e",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "es",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "ét",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "éts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ek",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "eks",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "3",
+                                "name": "3rd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "a",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "as",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "át",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "áts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ak",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "aks",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "4",
+                                "name": "3rd person inanimate subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "o",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "os",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "ót",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "óts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ok",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "oks",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "sub",
+                        "name": "subjunctive mood",
+                        "word": [
+                            {
+                                "key": "1",
+                                "name": "1st person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "ím",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "íms",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "imìt",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "imìts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ist",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "istìs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "2",
+                                "name": "2nd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "em",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "ems",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "emìt",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "emìts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "est",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "estìs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "3",
+                                "name": "3rd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "am",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "ams",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "amìt",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "amìts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ast",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "astìs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "4",
+                                "name": "3rd person inanimate subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "om",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "oms",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "omìt",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "omìts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ost",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "ostìs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "imp",
+                        "name": "imperative mood",
+                        "word": [
+                            {
+                                "key": "1",
+                                "name": "1st person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "íl",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "íls",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "2",
+                                "name": "2nd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "eť",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "eťs",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "él",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "éls",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "3",
+                                "name": "3rd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "ať",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "aťs",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ál",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "áls",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "4",
+                                "name": "3rd person inanimate subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "oť",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "oťs",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ol",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "ols",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "pas",
+                "name": "passive voice",
+                "word": [
+                    {
+                        "key": "ind",
+                        "name": "indicative mood",
+                        "word": [
+                            {
+                                "key": "1",
+                                "name": "1st person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "ip",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "ips",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "ír",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "írs",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "tin",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "tins",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "2",
+                                "name": "2nd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "ep",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "eps",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "ér",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "érs",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ten",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "tens",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "3",
+                                "name": "3rd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "ap",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "aps",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "ár",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "árs",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "tans",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "tans",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "4",
+                                "name": "3rd person inanimate subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "op",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "ops",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "ór",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "órs",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "tons",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "tons",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "sub",
+                        "name": "subjunctive mood",
+                        "word": [
+                            {
+                                "key": "1",
+                                "name": "1st person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "ilv",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "ilvs",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "erít",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "eríts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ímt",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "ímts",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "2",
+                                "name": "2nd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "elv",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "elvs",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "erét",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "eréts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "émt",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "émts",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "3",
+                                "name": "3rd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "alv",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "alvs",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "erát",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "eráts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ámt",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "ámts",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "4",
+                                "name": "3rd person inanimate subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "olv",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "olvs",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "erót",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "eróts",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "ómt",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "ómts",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "imp",
+                        "name": "imperative mood",
+                        "word": [
+                            {
+                                "key": "1",
+                                "name": "1st person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "ift",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "ifts",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "irf",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "irfs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "2",
+                                "name": "2nd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "eft",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "efts",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "erf",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "erfs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "3",
+                                "name": "3rd person subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "aft",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "afts",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "arf",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "arfs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "4",
+                                "name": "3rd person inanimate subject",
+                                "word": [
+                                    {
+                                        "key": "pr_s",
+                                        "word": "oft",
+                                        "name": "singular present tense"
+                                    },
+                                    {
+                                        "key": "pr_p",
+                                        "word": "ofts",
+                                        "name": "plural present tense"
+                                    },
+                                    {
+                                        "key": "pa_s",
+                                        "word": "",
+                                        "name": "singular past tense"
+                                    },
+                                    {
+                                        "key": "pa_p",
+                                        "word": "",
+                                        "name": "plural past tense"
+                                    },
+                                    {
+                                        "key": "ft_s",
+                                        "word": "orf",
+                                        "name": "singular future tense"
+                                    },
+                                    {
+                                        "key": "ft_p",
+                                        "word": "orfs",
+                                        "name": "plural future tense"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "object",
+        "declensions": [
+            {
+                "key": "1",
+                "word": "ib",
+                "name": "1st person direct object"
+            },
+            {
+                "key": "2",
+                "word": "ej",
+                "name": "2nd person direct object"
+            },
+            {
+                "key": "3",
+                "word": "ait",
+                "name": "3rd person direct object"
+            },
+            {
+                "key": "4",
+                "word": "oun",
+                "name": "3rd person inanimate direct object"
+            }
+        ]
+    }
+]

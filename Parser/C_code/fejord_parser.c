@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <lib/cJSON.h>
+#include "fejord_parser.h"
 
 int main (int argc, char **argv) {
     // create a cJSON object 
@@ -26,3 +26,4 @@ int main (int argc, char **argv) {
    cJSON_Delete(json); 
    return 0;
 }
+ 

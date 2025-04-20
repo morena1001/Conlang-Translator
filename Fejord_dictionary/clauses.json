@@ -1,23 +1,25 @@
-[
-    {
-        "key": "sub_cl",
-        "word": "fah",
-        "position": "separate word",
-        "name": "subordinate clause indicator",
-        "description": "Subordinate clauses follow the main clause"
-    },
-    {
-        "key": "rel_cl",
-        "word": "vjen",
-        "position": "separate word",
-        "name": "relative clause indicator",
-        "description": "Relative or descriptive subordinate clauses follow the noun"
-    },
-    {
-        "key": "sm_cl",
-        "word": "",
-        "position": "separate word",
-        "name": "small clause indicator (not used)",
-        "description": "Small clauses follow the main clause (not used)"
-    }
-]
+{
+    "clauses": [
+        {
+            "key": "sub_cl",
+            "word": "fah",
+            "position": "separate word",
+            "name": "subordinate clause indicator",
+            "description": "Subordinate clauses follow the main clause"
+        },
+        {
+            "key": "rel_cl",
+            "word": "vjen",
+            "position": "separate word",
+            "name": "relative clause indicator",
+            "description": "Relative or descriptive subordinate clauses follow the noun"
+        },
+        {
+            "key": "sm_cl",
+            "word": "",
+            "position": "separate word",
+            "name": "small clause indicator (not used)",
+            "description": "Small clauses follow the main clause (not used)"
+        }
+    ]
+}

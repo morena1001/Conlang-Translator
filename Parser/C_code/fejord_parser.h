@@ -1,8 +1,8 @@
 #ifndef INC_FEJORD_PARSER_H_
 #define INC_FEJORD_PARSER_H_
 
-#include <stdbool.h>
-#include <stdint.h>
+#include <string>
+#include <vector>
 
 #include "lib/cJSON.h"
 
@@ -36,23 +36,28 @@
         The final output will be printed back onto the console as well as an extra text document so that user can have a copy of it.         
 */
 
-enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT };
+enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT, SUB_CL, REL_CL, CLAUSE, ERROR };
 
 typedef struct {
-    char *phrase;
+    std::string phrase;
     enum sentence_part part;
     uint8_t order;
 } word_token_t;
 
-char** word_divider (char *input);
-char*** word_tokenizer (char **words);
-bool dictionary_search (char *base);
-word_token_t* clause_parser (char **token);
-word_token_t* noun_parser (char **token);
-word_token_t* adjective_parser (char **token);
-word_token_t* adverb_parser (char **token);
-word_token_t* number_parser (char **token);
-word_token_t* verb_parser (char **token);
-char* sentence_builder (word_token_t *tokens, uint8_t num_tokens);
+typedef struct {
+    char punct;
+    uint8_t order;
+} punct_token_t;
+
+std::vector<std::string> word_divider (std::string &input);
+std::vector<std::vector<std::string>> word_tokenizer (std::vector<std::string> &words);
+bool dictionary_search (std::string &base);
+word_token_t clause_parser (std::vector<std::string> &token);
+word_token_t noun_parser (std::vector<std::string> &token);
+word_token_t adjective_parser (std::vector<std::string> &token);
+word_token_t adverb_parser (std::vector<std::string> &token);
+word_token_t number_parser (std::vector<std::string> &token);
+word_token_t verb_parser (std::vector<std::string> &token);
+std::string sentence_builder (std::vector<word_token_t> &tokens, uint8_t num_tokens);
 
 #endif /* INC_FEJORD_PARSER_H_ */

@@ -1,152 +1,154 @@
-[
-    {
-        "fejord": "farot",
-        "english": "I",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "uìnot",
-        "english": "you",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "peinot",
-        "english": "He, she, they",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "kamot",
-        "english": "it",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "libet",
-        "english": "city",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "baidet",
-        "english": "food",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "biét",
-        "english": "sun",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "ridat",
-        "english": "day",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "vìrnat",
-        "english": "person",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "bajoret",
-        "english": "adventure",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "bjornat",
-        "english": "cloud",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "lideret",
-        "english": "afternoon",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "aďat",
-        "english": "sky",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "ueťet",
-        "english": "way / form",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "",
-        "english": "way / path",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "",
-        "english": "Tomorrow",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "",
-        "english": "tree",
-        "part of speech": "Noun"
-    },
-    {
-        "fejord": "deizen",
-        "english": "to like",
-        "part of speech": "Verb"
-    },
-    {
-        "fejord": "poren",
-        "english": "to eat",
-        "part of speech": "Verb"
-    },
-    {
-        "fejord": "hiden",
-        "english": "to hide",
-        "part of speech": "Verb"
-    },
-    {
-        "fejord": "minen",
-        "english": "to look",
-        "part of speech": "Verb"
-    },
-    {
-        "fejord": "mekìt",
-        "english": "to sleep",
-        "part of speech": "Intransitive verb"
-    },
-    {
-        "fejord": "torìt",
-        "english": "to love",
-        "part of speech": "Intransitive verb"
-    },
-    {
-        "fejord": "rifìt",
-        "english": "to walk",
-        "part of speech": "Intransitive verb"
-    },
-    {
-        "fejord": "mainìt",
-        "english": "to dream",
-        "part of speech": "Intransitive verb"
-    },
-    {
-        "fejord": "lakìt",
-        "english": "to stay",
-        "part of speech": "Intransitive verb"
-    },
-    {
-        "fejord": "menet",
-        "english": "here",
-        "part of speech": "Adverb"
-    },
-    {
-        "fejord": "liht",
-        "english": "already",
-        "part of speech": "Adverb"
-    },
-    {
-        "fejord": "jord",
-        "english": "before",
-        "part of speech": "Adverb"
-    },
-    {
-        "fejord": "ledì",
-        "english": "blue",
-        "part of speech": "Adjective"
-    }
-]
+{
+    "dictionary": [
+        {
+            "fejord": "farot",
+            "english": "I",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "uìnot",
+            "english": "you",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "peinot",
+            "english": "He, she, they",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "kamot",
+            "english": "it",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "libet",
+            "english": "city",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "baidet",
+            "english": "food",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "biét",
+            "english": "sun",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "ridat",
+            "english": "day",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "vìrnat",
+            "english": "person",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "bajoret",
+            "english": "adventure",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "bjornat",
+            "english": "cloud",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "lideret",
+            "english": "afternoon",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "aďat",
+            "english": "sky",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "ueťet",
+            "english": "way / form",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "",
+            "english": "way / path",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "",
+            "english": "Tomorrow",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "",
+            "english": "tree",
+            "part of speech": "Noun"
+        },
+        {
+            "fejord": "deizen",
+            "english": "to like",
+            "part of speech": "Verb"
+        },
+        {
+            "fejord": "poren",
+            "english": "to eat",
+            "part of speech": "Verb"
+        },
+        {
+            "fejord": "hiden",
+            "english": "to hide",
+            "part of speech": "Verb"
+        },
+        {
+            "fejord": "minen",
+            "english": "to look",
+            "part of speech": "Verb"
+        },
+        {
+            "fejord": "mekìt",
+            "english": "to sleep",
+            "part of speech": "Intransitive verb"
+        },
+        {
+            "fejord": "torìt",
+            "english": "to love",
+            "part of speech": "Intransitive verb"
+        },
+        {
+            "fejord": "rifìt",
+            "english": "to walk",
+            "part of speech": "Intransitive verb"
+        },
+        {
+            "fejord": "mainìt",
+            "english": "to dream",
+            "part of speech": "Intransitive verb"
+        },
+        {
+            "fejord": "lakìt",
+            "english": "to stay",
+            "part of speech": "Intransitive verb"
+        },
+        {
+            "fejord": "menet",
+            "english": "here",
+            "part of speech": "Adverb"
+        },
+        {
+            "fejord": "liht",
+            "english": "already",
+            "part of speech": "Adverb"
+        },
+        {
+            "fejord": "jord",
+            "english": "before",
+            "part of speech": "Adverb"
+        },
+        {
+            "fejord": "ledì",
+            "english": "blue",
+            "part of speech": "Adjective"
+        }
+    ]
+}

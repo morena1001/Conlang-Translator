@@ -36,7 +36,10 @@
         The final output will be printed back onto the console as well as an extra text document so that user can have a copy of it.         
 */
 
-enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT, SUB_CL, REL_CL, CLAUSE, ERROR };
+enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT, ADJ, SUB_CL, REL_CL, CLAUSE, ADPOS, ERROR };
+enum json_type { ADPOS_JSON, CLAUSE_JSON, DICT_JSON, NOUN_JSON, OTHER_JSON, VERB_JSON };
+enum word_gender { F, M, N };
+enum noun_case { NOMINATIVE, ACCUSATIVE, DATIVE, VOCATIVE, COMITATIVE, INSTRUMENTAL, SOCIATIVE, LOCATIVE, ABLATIVE, INESSIVE, ADDESSIVE, GENITIVE, ERGATIVE };
 
 typedef struct {
     std::string phrase;
@@ -49,9 +52,19 @@ typedef struct {
     uint8_t order;
 } punct_token_t;
 
+static cJSON *adpos_json = NULL;
+static cJSON *clause_json = NULL;
+static cJSON *dict_json = NULL;
+static cJSON *noun_json = NULL;
+static cJSON *other_json = NULL;
+static cJSON *verb_json = NULL;
+
+
+
 std::vector<std::string> word_divider (std::string &input);
 std::vector<std::vector<std::string>> word_tokenizer (std::vector<std::string> &words);
 bool dictionary_search (std::string &base);
+word_token_t adpos_parser (std::vector<std::string> &token);
 word_token_t clause_parser (std::vector<std::string> &token);
 word_token_t noun_parser (std::vector<std::string> &token);
 word_token_t adjective_parser (std::vector<std::string> &token);

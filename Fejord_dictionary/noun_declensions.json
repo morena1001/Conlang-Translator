@@ -1,653 +1,655 @@
-[
-    {
-        "type": "case",
-        "declensions": [
-            {
-                "key": "nom",
-                "case": "nominative",
-                "description": "subject",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "at",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "atìs",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "et",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "ets",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "ot",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "ots",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "acc",
-                "case": "accusative",
-                "description": "direct object",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "àr",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "àrs",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "er",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "erìs",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "oŕ",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "oŕìs",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "dat",
-                "case": "dative",
-                "description": "indirect object",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "ah",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "ahes",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "eh",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "ehìs",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "oh",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "ohìs",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "voc",
-                "case": "vocative",
-                "description": "addressed noun",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "jal",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "jalìs",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "jel",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "jelìs",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "jol",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "jolìs",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "com",
-                "case": "comitative",
-                "description": "accompaniment",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "auf",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "aufìs",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "ef",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "efìs",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "of",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "ofìs",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "int",
-                "case": "instrumental",
-                "description": "instrument",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "auď",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "auďs",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "eď",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "eďs",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "oď",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "oďs",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "soc",
-                "case": "sociative",
-                "description": "doing with",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "aiś",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "aiśìs",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "eiś",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "eiśìs",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "oś",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "ośìs",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "loc",
-                "case": "locative",
-                "description": "motion towards / close by",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "lak",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "laks",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "lek",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "leks",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "ok",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "oks",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "abl",
-                "case": "ablative",
-                "description": "motion away / far away",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "vam",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "vamìs",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "vem",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "vemìs",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "vom",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "vomìs",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "inv",
-                "case": "inessive",
-                "description": "inside",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "nà",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "nas",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "nì",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "nes",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "no",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "nos",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "ads",
-                "case": "addessive",
-                "description": "by / right outside",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "auz",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {"key": "fp",
-                        "word": "auzes",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "ez",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "ezes",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "oz",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "ozes",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "gen",
-                "case": "genitive",
-                "description": "possessed",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "ìn",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {"key": "fp",
-                        "word": "ìns",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "ìn",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "ìns",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "ìn",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "ìns",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            },
-            {
-                "key": "erg",
-                "case": "ergative",
-                "description": "agent",
-                "suffixes": [
-                    {
-                        "key": "fs",
-                        "word": "gen",
-                        "gender": "feminine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "fp",
-                        "word": "gens",
-                        "gender": "feminine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ms",
-                        "word": "gen",
-                        "gender": "masculine",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "mp",
-                        "word": "gens",
-                        "gender": "masculine",
-                        "plurality": "plural"
-                    },
-                    {
-                        "key": "ns",
-                        "word": "gen",
-                        "gender": "neuter",
-                        "plurality": "singular"
-                    },
-                    {
-                        "key": "np",
-                        "word": "gens",
-                        "gender": "neuter",
-                        "plurality": "plural"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "type": "article",
-        "declensions": [
-            {
-                "key": "def_f",
-                "word": "at",
-                "name": "feminine definite article" 
-            },
-            {
-                "key": "def_m",
-                "word": "et",
-                "name": "masculine definite article" 
-            },
-            {
-                "key": "def_n",
-                "word": "not",
-                "name": "neuter definite article" 
-            },
-            {
-                "key": "ind_f",
-                "word": "ain",
-                "name": "feminine indefinite article" 
-            },
-            {
-                "key": "ind_m",
-                "word": "en",
-                "name": "masculine indefinite article" 
-            },
-            {
-                "key": "ind_n",
-                "word": "ou",
-                "name": "neuter indefinite article" 
-            }
-        ]
-    },
-    {
-        "type": "positivity",
-        "declensions": [
-            {
-                "key": "aff",
-                "word": "ret",
-                "name": "affirmation"
-            },
-            {
-                "key": "neg",
-                "word": "fol",
-                "name": "negation"
-            }
-        ]
-    },
-    {
-        "type": "to other speeches",
-        "declensions": [
-            {
-                "key": "adj",
-                "word": [
-                    {
-                        "key": "f",
-                        "word": "à",
-                        "name": "feminine noun"
-                    },
-                    {
-                        "key": "m",
-                        "word": "e",
-                        "name": "masculine noun"
-                    },
-                    {
-                        "key": "n",
-                        "word": "ì",
-                        "name": "neuter noun"
-                    }
-                ],
-                "position": "suffix",
-                "name": "To adjective"
-            },
-            {
-                "key": "m_verb",
-                "word": "it",
-                "position": "prefix",
-                "name": "To 'make' verb"
-            },
-            {
-                "key": "a_verb",
-                "word": "be",
-                "position": "prefix",
-                "name": "To 'act' verb"
-            }
-        ]
-    }
-]
+{
+    "declensions": [
+        {
+            "type": "case",
+            "declensions": [
+                {
+                    "key": "nom",
+                    "case": "nominative",
+                    "description": "subject",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "at",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "atìs",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "et",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "ets",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "ot",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "ots",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "acc",
+                    "case": "accusative",
+                    "description": "direct object",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "àr",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "àrs",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "er",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "erìs",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "oŕ",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "oŕìs",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "dat",
+                    "case": "dative",
+                    "description": "indirect object",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "ah",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "ahes",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "eh",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "ehìs",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "oh",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "ohìs",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "voc",
+                    "case": "vocative",
+                    "description": "addressed noun",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "jal",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "jalìs",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "jel",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "jelìs",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "jol",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "jolìs",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "com",
+                    "case": "comitative",
+                    "description": "accompaniment",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "auf",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "aufìs",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "ef",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "efìs",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "of",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "ofìs",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "int",
+                    "case": "instrumental",
+                    "description": "instrument",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "auď",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "auďs",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "eď",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "eďs",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "oď",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "oďs",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "soc",
+                    "case": "sociative",
+                    "description": "doing with",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "aiś",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "aiśìs",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "eiś",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "eiśìs",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "oś",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "ośìs",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "loc",
+                    "case": "locative",
+                    "description": "motion towards / close by",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "lak",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "laks",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "lek",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "leks",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "ok",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "oks",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "abl",
+                    "case": "ablative",
+                    "description": "motion away / far away",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "vam",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "vamìs",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "vem",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "vemìs",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "vom",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "vomìs",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "inv",
+                    "case": "inessive",
+                    "description": "inside",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "nà",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "nas",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "nì",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "nes",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "no",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "nos",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "ads",
+                    "case": "addessive",
+                    "description": "by / right outside",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "auz",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {"key": "fp",
+                            "word": "auzes",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "ez",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "ezes",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "oz",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "ozes",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "gen",
+                    "case": "genitive",
+                    "description": "possessed",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "ìn",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {"key": "fp",
+                            "word": "ìns",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "ìn",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "ìns",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "ìn",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "ìns",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                },
+                {
+                    "key": "erg",
+                    "case": "ergative",
+                    "description": "agent",
+                    "suffixes": [
+                        {
+                            "key": "fs",
+                            "word": "gen",
+                            "gender": "feminine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "fp",
+                            "word": "gens",
+                            "gender": "feminine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ms",
+                            "word": "gen",
+                            "gender": "masculine",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "mp",
+                            "word": "gens",
+                            "gender": "masculine",
+                            "plurality": "plural"
+                        },
+                        {
+                            "key": "ns",
+                            "word": "gen",
+                            "gender": "neuter",
+                            "plurality": "singular"
+                        },
+                        {
+                            "key": "np",
+                            "word": "gens",
+                            "gender": "neuter",
+                            "plurality": "plural"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "article",
+            "declensions": [
+                {
+                    "key": "def_f",
+                    "word": "at",
+                    "name": "feminine definite article" 
+                },
+                {
+                    "key": "def_m",
+                    "word": "et",
+                    "name": "masculine definite article" 
+                },
+                {
+                    "key": "def_n",
+                    "word": "not",
+                    "name": "neuter definite article" 
+                },
+                {
+                    "key": "ind_f",
+                    "word": "ain",
+                    "name": "feminine indefinite article" 
+                },
+                {
+                    "key": "ind_m",
+                    "word": "en",
+                    "name": "masculine indefinite article" 
+                },
+                {
+                    "key": "ind_n",
+                    "word": "ou",
+                    "name": "neuter indefinite article" 
+                }
+            ]
+        },
+        {
+            "type": "positivity",
+            "declensions": [
+                {
+                    "key": "aff",
+                    "word": "ret",
+                    "name": "affirmation"
+                },
+                {
+                    "key": "neg",
+                    "word": "fol",
+                    "name": "negation"
+                }
+            ]
+        },
+        {
+            "type": "to other speeches",
+            "declensions": [
+                {
+                    "key": "adj",
+                    "word": [
+                        {
+                            "key": "f",
+                            "word": "à",
+                            "name": "feminine noun"
+                        },
+                        {
+                            "key": "m",
+                            "word": "e",
+                            "name": "masculine noun"
+                        },
+                        {
+                            "key": "n",
+                            "word": "ì",
+                            "name": "neuter noun"
+                        }
+                    ],
+                    "position": "suffix",
+                    "name": "To adjective"
+                },
+                {
+                    "key": "m_verb",
+                    "word": "it",
+                    "position": "prefix",
+                    "name": "To 'make' verb"
+                },
+                {
+                    "key": "a_verb",
+                    "word": "ge",
+                    "position": "prefix",
+                    "name": "To 'act' verb"
+                }
+            ]
+        }
+    ]
+}

@@ -1,71 +1,73 @@
-[
-    {
-        "part of speech": "adjective",
-        "declensions": [
-            {
-                "key": "com_adj",
-                "word": "veb",
-                "position": "suffix",
-                "name": "to comparative adjective"
-            },
-            {
-                "key": "sup_adj",
-                "word": "lav",
-                "position": "suffix",
-                "name": "to superlative adjective"
-            },
-            {
-                "key": "qual_n",
-                "word": "jud",
-                "position": "prefix",
-                "name": "to quality abstract noun"
-            },
-            {
-                "key": "cond_n",
-                "word": "in",
-                "position": "prefix",
-                "name": "to conditional abstract noun"
-            },
-            {
-                "key": "char_n",
-                "word": "or",
-                "position": "prefix",
-                "name": "to characteristic noun"
-            },
-            {
-                "key": "make_n",
-                "word": "it",
-                "position": "prefix",
-                "name": "to 'make' adjective"
-            }
-        ]
-    }, 
-    {
-        "part of speech": "adverb",
-        "declensions": [
-            {
-                "key": "adpos",
-                "word": "kor",
-                "position": "separate word",
-                "name": "to adposition"
-            },
-            {
-                "key": "com_adv",
-                "word": "beih",
-                "position": "suffix",
-                "name": "to comparative adverb"
-            }
-        ]
-    }, 
-    {
-        "part of speech": "number",
-        "declensions": [
-            {
-                "key": "rank_adj",
-                "word": "hur",
-                "position": "suffix",
-                "name": "to rank adjective"
-            }
-        ]
-    }
-]
+{
+    "declensions": [
+        {
+            "part of speech": "adjective",
+            "declensions": [
+                {
+                    "key": "com_adj",
+                    "word": "veb",
+                    "position": "suffix",
+                    "name": "to comparative adjective"
+                },
+                {
+                    "key": "sup_adj",
+                    "word": "lav",
+                    "position": "suffix",
+                    "name": "to superlative adjective"
+                },
+                {
+                    "key": "qual_n",
+                    "word": "jud",
+                    "position": "prefix",
+                    "name": "to quality abstract noun"
+                },
+                {
+                    "key": "cond_n",
+                    "word": "in",
+                    "position": "prefix",
+                    "name": "to conditional abstract noun"
+                },
+                {
+                    "key": "char_n",
+                    "word": "or",
+                    "position": "prefix",
+                    "name": "to characteristic noun"
+                },
+                {
+                    "key": "make_n",
+                    "word": "it",
+                    "position": "prefix",
+                    "name": "to 'make' adjective"
+                }
+            ]
+        }, 
+        {
+            "part of speech": "adverb",
+            "declensions": [
+                {
+                    "key": "adpos",
+                    "word": "kor",
+                    "position": "separate word",
+                    "name": "to adposition"
+                },
+                {
+                    "key": "com_adv",
+                    "word": "beih",
+                    "position": "suffix",
+                    "name": "to comparative adverb"
+                }
+            ]
+        }, 
+        {
+            "part of speech": "number",
+            "declensions": [
+                {
+                    "key": "rank_adj",
+                    "word": "hur",
+                    "position": "suffix",
+                    "name": "to rank adjective"
+                }
+            ]
+        }
+    ]
+}

@@ -5,6 +5,8 @@
 using namespace std;
 
 int file_length (ifstream &file);
+void get_json (enum json_type file_type);
+string get_word (string base);
 
 vector<string> word_divider (string &input) {
     vector<string> words;
@@ -97,22 +99,10 @@ vector<vector<string>> word_tokenizer (vector<string> &words) {
 }
 
 bool dictionary_search (string &base) {
-    ifstream dict ("Fejord_dictionary/dictionary.json");
-    
-    if (!dict) {
-        cout << "ERROR: could not open dictionary.json." << endl;
-        return false;
-    }
-
-    int length = file_length (dict);
-    char *buffer = new char[length];
-    dict.read (buffer, length);
-    dict.close ();
-
-    cJSON *json = cJSON_Parse (buffer);
-    cJSON *dict_array = cJSON_GetObjectItem (json, "dictionary");
+    get_json (DICT_JSON);
     cJSON *iterator = NULL;
-    cJSON_ArrayForEach (iterator, dict_array) {
+
+    cJSON_ArrayForEach (iterator, dict_json) {
         cJSON *eng = cJSON_GetObjectItem (iterator, "english");
         if (!base.compare (eng->valuestring))    return true;
 
@@ -125,23 +115,11 @@ bool dictionary_search (string &base) {
 }
 
 word_token_t clause_parser (std::vector<std::string> &token) {
-    ifstream clauses_file ("Fejord_dictionary/clauses.json");
     word_token_t clause;
-
-    if (!clauses_file) {
-        cout << "ERROR: could not open dictionary.json." << endl;
-        return clause;
-    }
-
-    int length = file_length (clauses_file);
-    char *buffer = new char[length];
-    clauses_file.read (buffer, length);
-    clauses_file.close ();
-
-    cJSON *json = cJSON_Parse (buffer);
-    cJSON *array = cJSON_GetObjectItem (json, "clauses");
+    get_json (CLAUSE_JSON);
     cJSON *iterator = NULL;   
-    cJSON_ArrayForEach (iterator, array) { 
+
+    cJSON_ArrayForEach (iterator, clause_json) { 
         cJSON *key = cJSON_GetObjectItem (iterator, "key");
         if (!token.at (0).compare (key->valuestring)) {
             clause.phrase = cJSON_GetObjectItem (iterator, "word")->valuestring;
@@ -154,6 +132,84 @@ word_token_t clause_parser (std::vector<std::string> &token) {
     return clause;
 }
 
+word_token_t noun_parser (vector<string> &token) {
+    word_token_t noun;
+    noun.part = SUBJECT;
+    get_json (NOUN_JSON);
+    string word = get_word (token.at (0));
+    
+    // Check that word is not an empty string 
+    if (!word.empty ()) {
+        // Derive the gender from the dictionary form of the word
+        enum word_gender gender;
+        switch (word.at (word.length () - 2)) {
+            case 'a':       gender = F; break;
+            case 'e':       gender = M; break;
+            default:        gender = N; break;
+        }
+
+        // iterate through each token
+        for (vector<string>::iterator it = token.begin () + 1; it != token.end(); it++) {
+            if (!(*it).compare ("F")) {
+                gender = F;
+                noun.phrase = word.substr (0, word.length () - 2) + "at";
+            }
+            
+            else if (!(*it).compare ("M")) {
+                gender = M;
+                noun.phrase = word.substr (0, word.length () - 2) + "et";
+            }
+            
+            else if (!(*it).compare ("N")) {
+                gender = N;
+                noun.phrase = word.substr (0, word.length () - 2) + "ot";
+                
+            }
+            
+            
+
+            else if (!(*it).compare ("adj")) {
+                // Grab the array that holds the gendered adjective suffixes
+                cJSON *adj_array = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next->next, "declensions")->child, "word")->child;
+
+                // Grab the correct suffix json iterator based on the dictionary word's gender
+                switch (gender) {
+                    case M: adj_array = adj_array->next; break;
+                    case N: adj_array = adj_array->next->next; break;
+                }
+
+                // Grab the gendered adjective suffix, and replace the base suffix with it
+                string suffix = cJSON_GetObjectItem (adj_array, "word")->valuestring;
+                noun.phrase = word.substr (0, word.length () - 2) + suffix;
+                noun.part = ADJ;
+            } 
+            
+            else if (!(*it).compare ("m_verb")) {
+                // Grab the prefix for the make verb declensions
+                string prefix = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next->next, "declensions")->child->next, "word")->valuestring;
+
+                // Remove the base suffix, and add the prefix
+                noun.phrase = prefix + word.substr (0, word.length () - 2);
+                noun.part = VERB;
+            }
+
+            else if (!(*it).compare ("a_verb")) {
+                // Grab the prefix for the make verb declensions
+                string prefix = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next->next, "declensions")->child->next->next, "word")->valuestring;
+
+                // Remove the base suffix, and add the prefix
+                noun.phrase = prefix + word.substr (0, word.length () - 2);
+                noun.part = VERB;
+            }
+        }
+    } else {
+        noun.phrase = "";
+        noun.part = ERROR;
+    }
+    
+    return noun;
+}
+
 
 
 
@@ -162,5 +218,104 @@ int file_length (ifstream &file) {
     int length = file.tellg ();
     file.seekg (0, file.beg);
     return length;
+}
+
+void get_json (enum json_type file_type) {
+    // Find the path to the correct json file given an enum of the file type
+    // At the same time, check that the json variable that has not been populated yet
+    string path = "Fejord_dictionary/";
+    switch (file_type) {
+        case ADPOS_JSON: 
+            if (adpos_json != NULL)        return;
+            path += "adpos_declensions.json";
+            break;
+
+        case CLAUSE_JSON: 
+            if (clause_json != NULL)        return;
+            path += "clauses.json";
+            break;
+
+        case DICT_JSON: 
+            if (dict_json != NULL)        return;
+            path += "dictionary.json";
+            break;
+
+        case NOUN_JSON: 
+            if (noun_json != NULL)        return;
+            path += "noun_declensions.json";
+            break;
+
+        case OTHER_JSON: 
+            if (other_json != NULL)        return;
+            path += "other_declensions.json";
+            break;
+
+        case VERB_JSON: 
+            if (verb_json != NULL)        return;
+            path += "verb_conjugations.json";
+            break;
+
+        default: 
+            cout << "ERROR: could not find file with enum type '" << file_type << "'." << endl;
+            return;
+    }  
+
+    // Attempt to open the file
+    ifstream file (path);
+    if (!file) {
+        cout << "ERROR: could not open '" << path << "'." << endl;
+        return;
+    }
+
+    // Grab the length of the file, create a buffer of that size, 
+    // and the data from the file onto the buffer
+    int length = file_length (file);
+    char *buffer = new char[length];
+    file.read (buffer, length);
+    file.close ();    
+
+    // Parse the file data into the corresponding json variable
+    switch (file_type) {
+        case ADPOS_JSON:
+            adpos_json = cJSON_Parse (buffer);
+            adpos_json = cJSON_GetObjectItem (adpos_json, "declensions");
+        case CLAUSE_JSON: 
+            clause_json = cJSON_Parse (buffer);
+            clause_json = cJSON_GetObjectItem (clause_json, "clauses");
+            break;
+
+        case DICT_JSON: 
+            dict_json = cJSON_Parse (buffer);
+            dict_json = cJSON_GetObjectItem (dict_json, "dictionary");
+            break;
+
+        case NOUN_JSON: 
+            noun_json = cJSON_Parse (buffer);
+            noun_json = cJSON_GetObjectItem (noun_json, "declensions");
+            break;
+
+        case OTHER_JSON: 
+            other_json = cJSON_Parse (buffer);
+            other_json = cJSON_GetObjectItem (other_json, "declensions");
+            break;
+
+        case VERB_JSON: 
+            verb_json = cJSON_Parse (buffer);
+            verb_json = cJSON_GetObjectItem (verb_json, "declensions");
+            break;
+    }
+}
+
+string get_word (string base) {
+    get_json (DICT_JSON);
+    cJSON *iterator = NULL;
+
+    cJSON_ArrayForEach (iterator, dict_json) {
+        cJSON *eng = cJSON_GetObjectItem (iterator, "english");
+        if (!base.compare (eng->valuestring))    return cJSON_GetObjectItem (iterator, "fejord")->valuestring;
+    }
+
+    cout << "ERROR: could not find base translation for word '" << base << "'." << endl; 
+    return "";
 }
  

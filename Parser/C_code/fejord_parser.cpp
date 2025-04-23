@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <cstring>
 #include "fejord_parser.h"
 
 using namespace std;
@@ -7,6 +8,9 @@ using namespace std;
 int file_length (ifstream &file);
 void get_json (enum json_type file_type);
 string get_word (string base);
+string noun_suffix (enum noun_case &word_case, enum word_gender &gender, enum word_plurality &plurality);
+int noun_suffix_length (enum noun_case &word_case, enum word_gender &gender, enum word_plurality &plurality);
+void add_prefix (string &phrase, string &prefix);
 
 vector<string> word_divider (string &input) {
     vector<string> words;
@@ -137,12 +141,15 @@ word_token_t noun_parser (vector<string> &token) {
     noun.part = SUBJECT;
     get_json (NOUN_JSON);
     string word = get_word (token.at (0));
-    
+    noun.phrase = word;
+
     // Check that word is not an empty string 
-    if (!word.empty ()) {
+    if (!noun.phrase.empty ()) {
         // Derive the gender from the dictionary form of the word
         enum word_gender gender;
-        switch (word.at (word.length () - 2)) {
+        enum word_plurality plurality = SING;
+        enum noun_case word_case = NOMINATIVE;
+        switch (noun.phrase.at (word.length () - 2)) {
             case 'a':       gender = F; break;
             case 'e':       gender = M; break;
             default:        gender = N; break;
@@ -151,19 +158,33 @@ word_token_t noun_parser (vector<string> &token) {
         // iterate through each token
         for (vector<string>::iterator it = token.begin () + 1; it != token.end(); it++) {
             if (!(*it).compare ("F")) {
+                // Grab the length of the current suffix
+                uint8_t curr_suffix_length = (uint8_t) noun_suffix_length (word_case, gender, plurality);
+                
+                // Grab the new suffix
                 gender = F;
-                noun.phrase = word.substr (0, word.length () - 2) + "at";
+                string new_suffix = noun_suffix (word_case, gender, plurality);
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length) + new_suffix;
             }
             
             else if (!(*it).compare ("M")) {
+                // Grab the length of the current suffix
+                uint8_t curr_suffix_length = (uint8_t) noun_suffix_length (word_case, gender, plurality);
+                
+                // Grab the new suffix
                 gender = M;
-                noun.phrase = word.substr (0, word.length () - 2) + "et";
+                string new_suffix = noun_suffix (word_case, gender, plurality);
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length) + new_suffix;
             }
             
             else if (!(*it).compare ("N")) {
-                gender = N;
-                noun.phrase = word.substr (0, word.length () - 2) + "ot";
+                // Grab the length of the current suffix
+                uint8_t curr_suffix_length = (uint8_t) noun_suffix_length (word_case, gender, plurality);
                 
+                // Grab the new suffix
+                gender = N;
+                string new_suffix = noun_suffix (word_case, gender, plurality);
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length) + new_suffix;
             }
             
             
@@ -172,15 +193,15 @@ word_token_t noun_parser (vector<string> &token) {
                 // Grab the array that holds the gendered adjective suffixes
                 cJSON *adj_array = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next->next, "declensions")->child, "word")->child;
 
-                // Grab the correct suffix json iterator based on the dictionary word's gender
-                switch (gender) {
-                    case M: adj_array = adj_array->next; break;
-                    case N: adj_array = adj_array->next->next; break;
-                }
+                // Grab the correct suffix based dictionary word's gender
+                for (uint8_t i = 0; i < gender; i++) adj_array = adj_array->next;
+                string suffix = cJSON_GetObjectItem (adj_array, "word")->valuestring;
+
+                // Grab the lenght of the current noun's suffix
+                uint8_t curr_suffix_length = noun_suffix_length (word_case, gender, plurality);
 
                 // Grab the gendered adjective suffix, and replace the base suffix with it
-                string suffix = cJSON_GetObjectItem (adj_array, "word")->valuestring;
-                noun.phrase = word.substr (0, word.length () - 2) + suffix;
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length) + suffix;
                 noun.part = ADJ;
             } 
             
@@ -188,8 +209,13 @@ word_token_t noun_parser (vector<string> &token) {
                 // Grab the prefix for the make verb declensions
                 string prefix = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next->next, "declensions")->child->next, "word")->valuestring;
 
-                // Remove the base suffix, and add the prefix
-                noun.phrase = prefix + word.substr (0, word.length () - 2);
+                // Grab the lenght of the current noun's suffix
+                uint8_t curr_suffix_length = noun_suffix_length (word_case, gender, plurality);
+
+                // Add the prefix and remove the suffix
+                add_prefix (noun.phrase, prefix);
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length);
+
                 noun.part = VERB;
             }
 
@@ -197,9 +223,100 @@ word_token_t noun_parser (vector<string> &token) {
                 // Grab the prefix for the make verb declensions
                 string prefix = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next->next, "declensions")->child->next->next, "word")->valuestring;
 
-                // Remove the base suffix, and add the prefix
-                noun.phrase = prefix + word.substr (0, word.length () - 2);
+                // Grab the lenght of the current noun's suffix
+                uint8_t curr_suffix_length = noun_suffix_length (word_case, gender, plurality);
+
+                // Add the prefix and remove the suffix
+                add_prefix (noun.phrase, prefix);
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length);
+
                 noun.part = VERB;
+            }
+
+
+
+            else if (!(*it).compare ("def")) {
+                // Grab the correct definite article based on the noun's gender
+                cJSON *art_array = cJSON_GetObjectItem (noun_json->child->next, "declensions")->child;
+                for (uint8_t i = 0; i < gender; i++) art_array = art_array->next;
+
+                string art = cJSON_GetObjectItem (art_array, "word")->valuestring;
+                noun.phrase = art + " " + noun.phrase;
+            }
+
+            else if (!(*it).compare ("ind")) {
+                // Grab the correct indefinite article based on the noun's gender
+                cJSON *art_array = cJSON_GetObjectItem (noun_json->child->next, "declensions")->child->next->next->next;
+                for (uint8_t i = 0; i < gender; i++) art_array = art_array->next;
+
+                string art = cJSON_GetObjectItem (art_array, "word")->valuestring;
+                noun.phrase = art + " " + noun.phrase;
+            }
+
+
+
+            else if (!(*it).compare ("plur")) {
+                // Grab the length of the current declension
+                uint8_t curr_suffix_length = (uint8_t) noun_suffix_length (word_case, gender, plurality); 
+
+                // Change the plurality and get the new suffix
+                plurality = PLUR;
+                string suffix = noun_suffix (word_case, gender, plurality);
+
+                // Grab the suffixes and exchange it
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length) + suffix;
+            }
+
+            else if (!(*it).compare ("sing")) {
+                // Grab the length of the current declension
+                uint8_t curr_suffix_length = (uint8_t) noun_suffix_length (word_case, gender, plurality); 
+
+                // Change the plurality and get the new suffix
+                plurality = SING;
+                string suffix = noun_suffix (word_case, gender, plurality);
+
+                // Grab the suffixes and exchange it
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length) + suffix;
+            }
+
+
+
+            else if (!(*it).compare ("aff")) {
+                string prefix = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next, "declensions")->child, "word")->valuestring;
+                add_prefix (noun.phrase, prefix);
+            }
+
+            else if (!(*it).compare ("neg")) {
+                string prefix = cJSON_GetObjectItem (cJSON_GetObjectItem (noun_json->child->next->next, "declensions")->child->next, "word")->valuestring;
+                add_prefix (noun.phrase, prefix);
+            }
+
+
+
+            else {
+                // Grab the length of the case suffix of current noun
+                uint8_t curr_suffix_length = (uint8_t) noun_suffix_length (word_case, gender, plurality);
+
+                // Get the new case for the noun
+                if      (!(*it).compare ("nom"))    word_case = NOMINATIVE;
+                else if (!(*it).compare ("acc"))    word_case = ACCUSATIVE;
+                else if (!(*it).compare ("dat"))    word_case = DATIVE;
+                else if (!(*it).compare ("voc"))    word_case = VOCATIVE;
+                else if (!(*it).compare ("com"))    word_case = COMITATIVE;
+                else if (!(*it).compare ("int"))    word_case = INSTRUMENTAL;
+                else if (!(*it).compare ("soc"))    word_case = SOCIATIVE;
+                else if (!(*it).compare ("loc"))    word_case = LOCATIVE;
+                else if (!(*it).compare ("abl"))    word_case = ABLATIVE;
+                else if (!(*it).compare ("inv"))    word_case = INESSIVE;
+                else if (!(*it).compare ("ads"))    word_case = ADDESSIVE;
+                else if (!(*it).compare ("gen"))    word_case = GENITIVE;
+                else if (!(*it).compare ("erg"))    word_case = ERGATIVE;
+                
+                // Grab the suffix for the new case
+                string new_suffix = noun_suffix (word_case, gender, plurality);
+
+                // Remove the previous suffix and replace it with the new suffix
+                noun.phrase = noun.phrase.substr (0, noun.phrase.length () - curr_suffix_length) + new_suffix;
             }
         }
     } else {
@@ -317,5 +434,34 @@ string get_word (string base) {
 
     cout << "ERROR: could not find base translation for word '" << base << "'." << endl; 
     return "";
+}
+
+string noun_suffix (enum noun_case &word_case, enum word_gender &gender, enum word_plurality &plurality) {
+    // Grab the case
+    cJSON *case_array = cJSON_GetObjectItem (noun_json->child, "declensions")->child;
+    for (uint8_t i = 0; i < word_case; i++) case_array = case_array->next; 
+
+    // Grab the gende
+    case_array = cJSON_GetObjectItem (case_array, "suffixes")->child;
+    for (uint8_t i = 0; i < gender; i++) case_array = case_array->next->next;
+
+    // Grab the plurality
+    if (plurality == PLUR) case_array = case_array->next; 
+
+    // return the suffix
+    return cJSON_GetObjectItem (case_array, "word")->valuestring;
+}
+
+int noun_suffix_length (enum noun_case &word_case, enum word_gender &gender, enum word_plurality &plurality) {
+    return noun_suffix (word_case, gender, plurality).length ();
+}
+
+void add_prefix (string &phrase, string &prefix) {
+    int idx = phrase.find_first_of (" ");
+    if (idx != string::npos) {
+        phrase = phrase.substr (0, idx + 1) + prefix + phrase.substr (idx + 1);                 
+    } else {
+        phrase = prefix + phrase;
+    }
 }
  

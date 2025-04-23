@@ -10,6 +10,10 @@ int main (int argc, char **argv) {
     noun_test::TEST_gender_change ();
     noun_test::TEST_to_other_speeches ();
     noun_test::TEST_article ();
+    noun_test::TEST_plurality ();
+    noun_test::TEST_case ();
+    noun_test::TEST_positivity ();
+    noun_test::TEST_complex_nouns ();
     
     return 0;
 }

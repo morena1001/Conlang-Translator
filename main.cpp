@@ -14,6 +14,9 @@ int main (int argc, char **argv) {
     noun_test::TEST_case ();
     noun_test::TEST_positivity ();
     noun_test::TEST_complex_nouns ();
+
+    adjective_test::TEST_gender_change ();
+    adjective_test::TEST_comparatives ();
     
     return 0;
 }

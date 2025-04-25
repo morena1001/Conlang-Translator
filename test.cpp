@@ -152,8 +152,49 @@ class noun_test {
             token.push_back ("plur");
             token.push_back ("dat");
             token.push_back ("neg");
-            assert (noun_parser (token).phrase == "at folbjornahes");
+            assert (noun_parser (token).phrase == "ats folbjornahes");
+
+            // Check that a change in the order of options does not change the final outcome
+            token.at (3) = "dat";
+            token.at (2) = "sing";
+            token.at (4) = "neg";
+            token.at (1) = "def";
+            assert (noun_parser (token).phrase == "at folbjornah");
+
+            // Check that the article follows the plurality of its noun
+            token.pop_back ();
+            token.pop_back ();
+            token.at (1) = "plur";
+            token.at (2) = "ind";
+            assert (!noun_parser (token).phrase.compare ("ains bjornatìs"));
 
             cout << "Passed all complex noun tests" << endl;
+        }
+};
+
+class adjective_test {
+    public:
+        static void TEST_gender_change () {
+            vector<string> token;
+
+            // Check if masculine happy adjective is "pire"
+            token.push_back ("happy");
+            token.push_back ("M");
+            assert (!adjective_parser (token).phrase.compare ("pire"));
+        }
+
+        static void TEST_comparatives () {
+            vector<string> token;
+
+            // Check to see if blue is "ledvìb"
+            token.push_back ("blue");
+            token.push_back ("com_adj");
+            assert (!adjective_parser (token).phrase.compare ("ledvìb"));
+
+            // Check to see if bluest is "ledlìv"
+            token.at (1) = "sup_adj";
+            assert (!adjective_parser (token).phrase.compare ("ledlìf"));
+
+            cout << "Passed all adjective comparative tests." << endl;
         }
 };

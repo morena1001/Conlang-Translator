@@ -5,13 +5,45 @@
             "declensions": [
                 {
                     "key": "com_adj",
-                    "word": "veb",
+                    "word": [
+                        {
+                            "key": "com_f",
+                            "word": "vab",
+                            "name": "feminine comparative adjective"
+                        },
+                        {
+                            "key": "com_m",
+                            "word": "veb",
+                            "name": "masculine comparative adjective"
+                        },
+                        {
+                            "key": "com_n",
+                            "word": "vìb",
+                            "name": "neuter comparative adjective"
+                        }
+                    ],
                     "position": "suffix",
                     "name": "to comparative adjective"
                 },
                 {
                     "key": "sup_adj",
-                    "word": "lav",
+                    "word": [
+                        {
+                            "key": "sup_f",
+                            "word": "laf",
+                            "name": "feminine superlative adjective"
+                        },
+                        {
+                            "key": " sup_m",
+                            "word": "lef",
+                            "name": "masculine superlative adjective"
+                        },
+                        {
+                            "key": "sup_n",
+                            "word": "lìf",
+                            "name": "neuter superlative adjective"
+                        }
+                    ],
                     "position": "suffix",
                     "name": "to superlative adjective"
                 },

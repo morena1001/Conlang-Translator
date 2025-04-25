@@ -568,32 +568,62 @@
                 {
                     "key": "def_f",
                     "word": "at",
-                    "name": "feminine definite article" 
+                    "name": "feminine definite singular article" 
                 },
                 {
                     "key": "def_m",
                     "word": "et",
-                    "name": "masculine definite article" 
+                    "name": "masculine definite singular article" 
                 },
                 {
                     "key": "def_n",
                     "word": "not",
-                    "name": "neuter definite article" 
+                    "name": "neuter definite singular article" 
                 },
                 {
                     "key": "ind_f",
                     "word": "ain",
-                    "name": "feminine indefinite article" 
+                    "name": "feminine indefinite singular article" 
                 },
                 {
                     "key": "ind_m",
                     "word": "en",
-                    "name": "masculine indefinite article" 
+                    "name": "masculine indefinite singular article" 
                 },
                 {
                     "key": "ind_n",
                     "word": "ou",
-                    "name": "neuter indefinite article" 
+                    "name": "neuter indefinite singular article" 
+                },
+                {
+                    "key": "def_f_p",
+                    "word": "ats",
+                    "name": "feminine definite plural article" 
+                },
+                {
+                    "key": "def_m_p",
+                    "word": "ets",
+                    "name": "masculine definite plural article" 
+                },
+                {
+                    "key": "def_n_p",
+                    "word": "nots",
+                    "name": "neuter definite plural article" 
+                },
+                {
+                    "key": "ind_f_p",
+                    "word": "ains",
+                    "name": "feminine indefinite plural article" 
+                },
+                {
+                    "key": "ind_m_p",
+                    "word": "ens",
+                    "name": "masculine indefinite plural article" 
+                },
+                {
+                    "key": "ind_n_p",
+                    "word": "ous",
+                    "name": "neuter indefinite plural article" 
                 }
             ]
         },

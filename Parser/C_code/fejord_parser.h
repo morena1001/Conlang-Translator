@@ -37,10 +37,11 @@
 */
 
 enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT, ADJ, SUB_CL, REL_CL, CLAUSE, ADPOS, ERROR };
-enum json_type { ADPOS_JSON, CLAUSE_JSON, DICT_JSON, NOUN_JSON, OTHER_JSON, VERB_JSON };
+enum json_type { ADPOS_JSON, CLAUSE_JSON, DICT_JSON, NOUN_JSON, ADJ_JSON, ADV_JSON, NUM_JSON, VERB_JSON };
 enum word_gender { F, M, N };
 enum word_plurality { SING, PLUR };
 enum noun_case { NOMINATIVE, ACCUSATIVE, DATIVE, VOCATIVE, COMITATIVE, INSTRUMENTAL, SOCIATIVE, LOCATIVE, ABLATIVE, INESSIVE, ADDESSIVE, GENITIVE, ERGATIVE };
+enum noun_article { DEFINITIVE, INDEFINITIVE, NONE };
 
 typedef struct {
     std::string phrase;
@@ -57,7 +58,9 @@ static cJSON *adpos_json = NULL;
 static cJSON *clause_json = NULL;
 static cJSON *dict_json = NULL;
 static cJSON *noun_json = NULL;
-static cJSON *other_json = NULL;
+static cJSON *adj_json = NULL;
+static cJSON *adverb_json = NULL;
+static cJSON *number_json = NULL;
 static cJSON *verb_json = NULL;
 
 

@@ -59,21 +59,21 @@ class noun_test {
             token.at (0) = "city";
             assert (noun_parser (token).phrase == "libe");
 
-            // // Check if it-like translates to "kamì"
+            // Check if it-like translates to "kamì"
             token.at (0) = "it";
             assert (noun_parser (token).phrase == "kamì");
 
             // TEST MAKE VERB DECLENSION
-            // Check if "to adventure" translates to "itbajor"
+            // Check if "to adventure" translates to "etbajorìt"
             token.at (0) = "adventure";
             token.at (1) = "m_verb";
-            assert (noun_parser (token).phrase == "itbajor");
+            assert (noun_parser (token).phrase == "etbajorìt");
 
             // TEST ACT VERB DECLENSION
-            // Check if "to act like a cloud" translates to "gebjorn"
+            // Check if "to act like a cloud" translates to "gabjornìt"
             token.at (0) = "cloud";
             token.at (1) = "a_verb";
-            assert (noun_parser (token).phrase == "gebjorn");
+            assert (noun_parser (token).phrase == "gabjornìt");
 
             cout << "Passed all noun to other speeches tests." << endl;
         }
@@ -168,6 +168,16 @@ class noun_test {
             token.at (2) = "ind";
             assert (!noun_parser (token).phrase.compare ("ains bjornatìs"));
 
+            // Check that the article can be removed
+            token.at (1) = "def";
+            token.at (2) = "abs";
+            assert (!noun_parser (token).phrase.compare ("bjornat"));
+            
+            // Check that the affirmation can be removed
+            token.at (1) = "aff";
+            token.at (2) = "no_con";
+            assert (!noun_parser (token).phrase.compare ("bjornat"));
+
             cout << "Passed all complex noun tests" << endl;
         }
 };
@@ -181,6 +191,19 @@ class adjective_test {
             token.push_back ("happy");
             token.push_back ("M");
             assert (!adjective_parser (token).phrase.compare ("pire"));
+
+            cout << "Passed all adjective gender change tests" << endl;
+        }
+
+        static void TEST_plurality_change () {
+            vector<string> token;
+
+            // Check if plural good adjective is "indìs"
+            token.push_back ("good");
+            token.push_back ("plur");
+            assert (!adjective_parser (token).phrase.compare ("indìs"));
+
+            cout << "Passed all adjective plurality change tests" << endl;
         }
 
         static void TEST_comparatives () {
@@ -188,13 +211,49 @@ class adjective_test {
 
             // Check to see if blue is "ledvìb"
             token.push_back ("blue");
-            token.push_back ("com_adj");
+            token.push_back ("comp");
             assert (!adjective_parser (token).phrase.compare ("ledvìb"));
 
-            // Check to see if bluest is "ledlìv"
-            token.at (1) = "sup_adj";
+            // Check to see if bluest is "ledlìf"
+            token.at (1) = "super";
             assert (!adjective_parser (token).phrase.compare ("ledlìf"));
 
-            cout << "Passed all adjective comparative tests." << endl;
+            cout << "Passed all adjective comparative tests" << endl;
+        }
+
+        static void TEST_to_other_speeches () {
+            vector<string> token;
+
+            // Check to see if blue turned into a quality abstract noun is "ìrledot"
+            token.push_back ("blue");
+            token.push_back ("qual_n");
+            assert (!adjective_parser (token).phrase.compare ("ìrledot"));
+
+            // Check to see if blue turned into a condition abstract noun is "ìnledot"
+            token.at (1) = "cond_n";
+            assert (!adjective_parser (token).phrase.compare ("ìnledot"));
+
+            // Check to see if blue turned into a condition abstract noun is "ledot"
+            token.at (1) = "char_n";
+            assert (!adjective_parser (token).phrase.compare ("ledot"));
+            
+            // Check to see if blue turned into a "make" verb is "ìtledìt"
+            token.at (1) = "make_v";
+            assert (!adjective_parser (token).phrase.compare ("ìtledìt"));
+
+            cout << "Passed all adjective to other speeches tests" << endl;
+        }
+
+        static void TEST_complex_adjectives () {
+            vector <string> token;
+
+            // Check to see if a comparitive characteristic noun turned female blue is "vàledat"
+            token.push_back ("blue");
+            token.push_back ("F");
+            token.push_back ("comp");
+            token.push_back ("char_n");
+            assert (!adjective_parser (token).phrase.compare ("vàledat"));
+
+            cout << "Passed all complex adjective tests" << endl;
         }
 };

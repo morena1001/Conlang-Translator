@@ -8,7 +8,7 @@
                     "word": [
                         {
                             "key": "com_f",
-                            "word": "vab",
+                            "word": "vàb",
                             "name": "feminine comparative adjective"
                         },
                         {
@@ -30,7 +30,7 @@
                     "word": [
                         {
                             "key": "sup_f",
-                            "word": "laf",
+                            "word": "làf",
                             "name": "feminine superlative adjective"
                         },
                         {
@@ -49,25 +49,25 @@
                 },
                 {
                     "key": "qual_n",
-                    "word": "jud",
+                    "word": "ìr",
                     "position": "prefix",
                     "name": "to quality abstract noun"
                 },
                 {
                     "key": "cond_n",
-                    "word": "in",
+                    "word": "ìn",
                     "position": "prefix",
                     "name": "to conditional abstract noun"
                 },
                 {
                     "key": "char_n",
-                    "word": "or",
+                    "word": "",
                     "position": "prefix",
                     "name": "to characteristic noun"
                 },
                 {
-                    "key": "make_n",
-                    "word": "it",
+                    "key": "make_v",
+                    "word": "ìt",
                     "position": "prefix",
                     "name": "to 'make' adjective"
                 }

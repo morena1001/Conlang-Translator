@@ -38,10 +38,14 @@
 
 enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT, ADJ, SUB_CL, REL_CL, CLAUSE, ADPOS, ERROR };
 enum json_type { ADPOS_JSON, CLAUSE_JSON, DICT_JSON, NOUN_JSON, ADJ_JSON, ADV_JSON, NUM_JSON, VERB_JSON };
+
 enum word_gender { F, M, N };
 enum word_plurality { SING, PLUR };
 enum noun_case { NOMINATIVE, ACCUSATIVE, DATIVE, VOCATIVE, COMITATIVE, INSTRUMENTAL, SOCIATIVE, LOCATIVE, ABLATIVE, INESSIVE, ADDESSIVE, GENITIVE, ERGATIVE };
 enum noun_article { DEFINITIVE, INDEFINITIVE, NONE };
+enum affirmation { NO_CONFIRMATION, AFFIRMATION, NEGATION };
+
+enum adj_comparitive { NORMAL, COMPARITIVE, SUPERLATIVE };
 
 typedef struct {
     std::string phrase;

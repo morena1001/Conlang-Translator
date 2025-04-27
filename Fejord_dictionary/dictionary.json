@@ -159,6 +159,81 @@
             "fejord": "pirì",
             "english": "happy",
             "part of speech": "Adjective"
+        },
+        {
+            "fejord": "indì",
+            "english": "good",
+            "part of speech": "Adjective"
+        },
+        {
+            "fejord": "nait",
+            "english": "before",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "tìr",
+            "english": "after",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "stànk",
+            "english": "during",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "mit",
+            "english": "at",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "tolk",
+            "english": "above",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "fàst",
+            "english": "below",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "tun",
+            "english": "for",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "klov",
+            "english": "except",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "vern",
+            "english": "about",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "kreit",
+            "english": "through",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "bàm",
+            "english": "like",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "mert",
+            "english": "than",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "dolć",
+            "english": "between",
+            "part of speech": "Adposition"
+        },
+        {
+            "fejord": "glìn",
+            "english": "until",
+            "part of speech": "Adposition"
         }
     ]
 }

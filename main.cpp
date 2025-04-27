@@ -16,7 +16,10 @@ int main (int argc, char **argv) {
     noun_test::TEST_complex_nouns ();
 
     adjective_test::TEST_gender_change ();
+    adjective_test::TEST_plurality_change ();
     adjective_test::TEST_comparatives ();
+    adjective_test::TEST_to_other_speeches ();
+    adjective_test::TEST_complex_adjectives ();
     
     return 0;
 }

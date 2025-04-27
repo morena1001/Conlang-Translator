@@ -257,3 +257,50 @@ class adjective_test {
             cout << "Passed all complex adjective tests" << endl;
         }
 };
+
+class adverb_test {
+    public:
+        static void TEST_comparitives () {
+            vector<string> token;
+
+            // Check to see if a comparitive forever is "jordbeih"
+            token.push_back ("forever");
+            token.push_back ("comp");
+            assert (!adverb_parser (token).phrase.compare ("jordbeih"));
+
+            cout << "Passed all comparitive adverb tests" << endl;
+        }
+
+        static void TEST_to_other_speeches () {
+            vector<string> token;
+
+            // Check to see if here as an adposition is "menetkor"
+            token.push_back ("here");
+            token.push_back ("adpos");
+            assert (!adverb_parser (token).phrase.compare ("menetkor"));
+
+            // Check to see if here as a noun is "menetot"
+            token.at (1) = "noun";
+            assert (!adverb_parser (token).phrase.compare ("menetot"));
+
+            cout << "Passed all adverb to other speeches tests" << endl;
+        }
+};
+
+class number_test {
+    public:
+        static void TEST_to_other_speeches () {
+            vector<string> token;
+
+            // Check to see if 1st is "1hur"
+            token.push_back ("1");
+            token.push_back ("rank");
+            assert (!number_parser (token).phrase.compare ("1hur"));
+
+            // Check to see if 1 as a nounr is "1ot"
+            token.at (1) = "noun";
+            assert (!number_parser (token).phrase.compare ("1ot"));
+
+            cout << "Passed all number to other speeches tests" << endl;
+        }
+};

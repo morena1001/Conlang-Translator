@@ -494,6 +494,63 @@ word_token_t adjective_parser (vector<string> &token) {
     return adjective;
 }
 
+word_token_t adverb_parser (vector<string> &token) {
+    word_token_t adverb;
+    adverb.part = ADVERB;
+    get_json (ADV_JSON);
+
+    adverb.phrase = get_word (token.at (0));
+
+    // Check that word is not an empty string 
+    if (!adverb.phrase.empty ()) {
+        for (vector<string>::iterator it = token.begin () + 1; it != token.end(); it++) {
+            if (!(*it).compare ("comp")) {
+                adverb.phrase += cJSON_GetObjectItem (cJSON_GetObjectItem (adverb_json, "declensions")->child->next, "word")->valuestring;
+            }
+
+            else if (!(*it).compare ("adpos")) {
+                adverb.phrase += cJSON_GetObjectItem (cJSON_GetObjectItem (adverb_json, "declensions")->child, "word")->valuestring;
+            }
+
+            else if (!(*it).compare ("noun")) {
+                adverb.phrase += cJSON_GetObjectItem (cJSON_GetObjectItem (adverb_json, "declensions")->child->next->next, "word")->valuestring;
+                adverb.phrase += "ot";
+            }
+        }
+    } else {
+        adverb.phrase = "";
+        adverb.part = ERROR;
+    }
+
+    return adverb;
+}
+
+word_token_t number_parser (vector<string> &token) {
+    word_token_t number;
+    number.part = NUMBER;
+    get_json (NUM_JSON);
+
+    number.phrase = token.at (0); //get_word (token.at (0));
+
+    // Check that word is not an empty string 
+    if (!number.phrase.empty ()) {
+        for (vector<string>::iterator it = token.begin () + 1; it != token.end(); it++) {
+            if (!(*it).compare ("rank")) {
+                number.phrase += cJSON_GetObjectItem (cJSON_GetObjectItem (number_json, "declensions")->child, "word")->valuestring;
+            }
+
+            if (!(*it).compare ("noun")) {
+                number.phrase += "ot";
+            }
+        }
+    } else {
+        number.phrase = "";
+        number.part = ERROR;
+    }
+
+    return number;
+}
+
 
 
 

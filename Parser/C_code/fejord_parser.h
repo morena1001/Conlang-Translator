@@ -36,7 +36,7 @@
         The final output will be printed back onto the console as well as an extra text document so that user can have a copy of it.         
 */
 
-enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT, ADJ, SUB_CL, REL_CL, CLAUSE, ADPOS, ERROR };
+enum sentence_part { VERB, ADVERB, NOUN, SUBJECT, DIR_OBJECT, IND_OBJECT, ADJ, SUB_CL, REL_CL, CLAUSE, ADPOS, NUMBER, ERROR };
 enum json_type { ADPOS_JSON, CLAUSE_JSON, DICT_JSON, NOUN_JSON, ADJ_JSON, ADV_JSON, NUM_JSON, VERB_JSON };
 
 enum word_gender { F, M, N };

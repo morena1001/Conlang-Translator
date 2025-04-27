@@ -79,7 +79,7 @@
                 {
                     "key": "adpos",
                     "word": "kor",
-                    "position": "separate word",
+                    "position": "suffix",
                     "name": "to adposition"
                 },
                 {
@@ -87,6 +87,12 @@
                     "word": "beih",
                     "position": "suffix",
                     "name": "to comparative adverb"
+                },
+                {
+                    "key": "noun",
+                    "word": "",
+                    "position": "suffix",
+                    "name": "to noun"
                 }
             ]
         }, 
@@ -94,7 +100,7 @@
             "part of speech": "number",
             "declensions": [
                 {
-                    "key": "rank_adj",
+                    "key": "rank",
                     "word": "hur",
                     "position": "suffix",
                     "name": "to rank adjective"

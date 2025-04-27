@@ -20,6 +20,11 @@ int main (int argc, char **argv) {
     adjective_test::TEST_comparatives ();
     adjective_test::TEST_to_other_speeches ();
     adjective_test::TEST_complex_adjectives ();
+
+    adverb_test::TEST_comparitives ();
+    adverb_test::TEST_to_other_speeches ();
+
+    number_test::TEST_to_other_speeches ();
     
     return 0;
 }

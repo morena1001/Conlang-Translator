@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <map>
 
 // FUNCTIONS NEEDED
 /*
@@ -30,14 +31,36 @@
 
 enum sentence_part { VERB, NOUN, ADJECTIVE, ADVERB, NUMBER, ADPOSITION, CONJUNCTION, CLAUSE, ERROR };
 
+// NOUN ENUMS
+enum noun_case {NOMINATIVE, ACCUSATIVE, DATIVE, VOCATIVE, COMITATIVE, INSTRUMENTAL, SOCIATIVE, LOCATIVE, ABLATIVE, INESSIVE, ADDESSIVE, GENITIVE, EX_ERGATIVE, ERGATIVE, CAUSATIVE, ADJUNCTIVE};
+enum noun_gender {FEMALE, MALE, NEUTER};
+enum noun_plurality {SINGULAR, PLURAL};
+enum noun_definiteness {GENERIC, DEFINITE, INDEFINITE};
+enum noun_polarity {NONE, AFFIRMATION, NEGATION};
+
+// MAPPING OF OPTIONS TO ENUM VALUES
+static std::map<std::string, noun_case> noun_case_options;
+static std::map<std::string, noun_gender> noun_gender_options;
+static std::map<std::string, noun_plurality> noun_plurality_options;
+static std::vector<std::vector<std::vector<std::string>>> noun_case_suffix;
+
+static std::map<std::string, noun_definiteness> noun_definiteness_options;
+static std::vector<std::vector<std::vector<std::string>>> noun_definiteness_word;
+
+static std::map<std::string, noun_polarity> noun_polarity_options;
+static std::vector<std::vector<std::string>> noun_polarity_word;
+
+
 typedef struct {
     std::string phrase;
     enum sentence_part part;
     uint8_t order;
 } word_token_t;
 
+void parser_init ();
+
 std::vector<std::string> option_divider (std::string &input);
-bool dictionary_search (std::string &base);
+std::string translate_word (std::string &base);
 
 word_token_t noun_parser (std::vector<std::string> &token);
 

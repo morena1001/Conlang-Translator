@@ -19,6 +19,8 @@ class option_divider_test {
             // A token with options returns vectorized base word and options
             token += ".nom.plur.def";
             assert (option_divider (token) == (vector<string> {"city", "nom", "plur", "def"}));
+
+            cout << "Passed all option divide function tests" << endl;
         }
 };
 
